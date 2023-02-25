@@ -1,0 +1,13 @@
+-- Get the player's character
+local character = game.Players.LocalPlayer.Character
+
+-- Reduce the cooldown of the Q and E abilities to a negligible value
+local qAbility = character:FindFirstChild("QAbility")
+if qAbility then
+    qAbility.CooldownTime = 0.01
+end
+
+local eAbility = character:FindFirstChild("EAbility")
+if eAbility then
+    eAbility.CooldownTime = 0.01
+end
